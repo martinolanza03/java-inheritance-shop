@@ -28,12 +28,4 @@ public class Television extends Product {
     public void setSmart(boolean smart) {
         this.smart = smart;
     }
-
-    public String descriptionSmart() {
-        if (smart) {
-            return "La Tv è smart";
-        }
-        return "La Tv non è smart";
-    }
-
 }

@@ -50,7 +50,7 @@ public class Product {
 
     public BigDecimal getIva() {
         if (price != null && iva != null) {
-            return price.add(iva).setScale(2, RoundingMode.DOWN);
+            return price.multiply(iva.add(BigDecimal.ONE)).setScale(2, RoundingMode.DOWN);
         }
         return null;
     }

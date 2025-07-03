@@ -21,7 +21,7 @@ public class Television extends Product {
         this.inch = inch;
     }
 
-    public boolean getSmart() {
+    public boolean isSmart() {
         return smart;
     }
 
@@ -29,7 +29,7 @@ public class Television extends Product {
         this.smart = smart;
     }
 
-    public String isSmart() {
+    public String descriptionSmart() {
         if (smart) {
             return "La Tv è smart";
         }

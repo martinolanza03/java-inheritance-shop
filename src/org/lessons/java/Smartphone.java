@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.util.Random;
 
 public class Smartphone extends Product {
-    public int codeImei;
-    public int memory;
+    private int codeImei;
+    private int memory;
 
     public Smartphone(String name, String brand, BigDecimal price, int memory) {
         super(name, brand, price);
@@ -25,6 +25,11 @@ public class Smartphone extends Product {
 
     public void setMemory(int memory) {
         this.memory = memory;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + String.format("Codice IMEI: %d, Memoria %d GB", this.getCodeIMEI(), this.getMemory());
     }
 
 }

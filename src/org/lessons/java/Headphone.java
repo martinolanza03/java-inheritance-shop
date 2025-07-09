@@ -3,8 +3,8 @@ package org.lessons.java;
 import java.math.BigDecimal;
 
 public class Headphone extends Product {
-    public String color;
-    public boolean wireless;
+    private String color;
+    private boolean wireless;
 
     public Headphone(String name, String brand, BigDecimal price, String color, boolean wireless) {
         super(name, brand, price);
@@ -27,6 +27,12 @@ public class Headphone extends Product {
 
     public void setWireless(boolean wireless) {
         this.wireless = wireless;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()
+                + String.format("Cuffie color %s, Wireless: %s ", this.getColor(), this.isWireless() ? "Si" : "No");
     }
 
 }

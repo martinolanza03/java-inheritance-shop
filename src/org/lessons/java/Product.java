@@ -55,4 +55,15 @@ public class Product {
         return null;
     }
 
+    @Override
+    public String toString() {
+        if (name != null) {
+            return String.format("Prodotto: %s - Brand: %s - Prezzo: %s euro",
+                    this.getName(),
+                    this.getBrand(),
+                    this.getPrice().setScale(2, RoundingMode.HALF_UP));
+        }
+        return "Prodotto non valido";
+    }
+
 }

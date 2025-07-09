@@ -5,7 +5,7 @@ import java.math.RoundingMode;
 import java.util.Random;
 
 public class Product {
-    public int code;
+    private int code;
     private String name;
     private String brand;
     private BigDecimal price;

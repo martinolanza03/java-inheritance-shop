@@ -3,8 +3,8 @@ package org.lessons.java;
 import java.math.BigDecimal;
 
 public class Television extends Product {
-    public float inch;
-    public boolean smart;
+    private float inch;
+    private boolean smart;
 
     public Television(String name, String brand, BigDecimal price, float inch, boolean smart) {
         super(name, brand, price);
